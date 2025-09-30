@@ -5,20 +5,21 @@
 VL53L0X sensorF, sensorR, sensorL;
 
 // Pines para XSHUT de cada sensor (todos comparten SDA, SCL, VCC y GND)
-int pinSensorF = 2;
-int pinSensorL = 3;
-int pinSensorR = 4;
+int pinSensorF = 10;
+int pinSensorL = 11;
+int pinSensorR = 12;
 
 // Pines de motores
-int MotorA1 = 7;
-int MotorA2 = 6;
-int pwmMotorA = 5;
+int pwmMotorA = 9;
+int MotorA1 = 8;
+int MotorA2 = 7;
 
-int MotorB1 = 10;
-int MotorB2 = 8;
-int pwmMotorB = 9;
+int pinSTBY = 6;
 
-int pinSTBY = 11;
+int MotorB1 = 5;
+int MotorB2 = 4;
+int pwmMotorB = 3;
+
 char leer = 0;
 
 // Variable global: distancia mínima para considerar “cerca” (en mm)
