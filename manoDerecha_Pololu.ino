@@ -70,9 +70,9 @@ void setup()
   sensorR.setAddress(0x32);
 
   // Configuramos modo de medida continua
-  sensorF.startContinuous();
-  sensorL.startContinuous();
-  sensorR.startContinuous();
+  sensorF.startContinuous(50);
+  sensorL.startContinuous(55);
+  sensorR.startContinuous(60);
 
   Serial.println("Sensores VL53L0X inicializados con direcciones únicas!");
 }
